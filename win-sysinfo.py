@@ -29,8 +29,8 @@ del title
 
 raminfo = ps.virtual_memory()
 print('Available RAM: %s' %(get_size(raminfo.available)))
-timestamp = ps.boot_time()
-bt = datetime.fromtimestamp(timestamp)
+bt_timestamp = ps.boot_time()
+bt = datetime.fromtimestamp(bt_timestamp)
 print(f'Computer boot time: {bt.year}/{bt.month}/{bt.day} at {bt.hour}:{bt.minute}')
 del timestamp
 del bt
