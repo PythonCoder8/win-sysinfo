@@ -32,7 +32,7 @@ print('Available RAM: %s' %(get_size(raminfo.available)))
 bt_timestamp = ps.boot_time()
 bt = datetime.fromtimestamp(bt_timestamp)
 print(f'Computer boot time: {bt.year}/{bt.month}/{bt.day} at {bt.hour}:{bt.minute}')
-del timestamp
+del bt_timestamp
 del bt
 print('Computer hostname: %s'%(socket.gethostname()))
 print('CPU cores: %s'%(ps.cpu_count(logical=False)))
