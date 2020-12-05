@@ -19,7 +19,7 @@ def get_size(bytesize, suffix="B"):
         bytesize /= factor
 
 width = 60
-titletxt = 'Windows System Info'
+titletxt = 'System Info'
 title = titletxt.center(width, '-')
 print(title + "\n")
 
